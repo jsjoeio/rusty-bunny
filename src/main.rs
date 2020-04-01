@@ -27,7 +27,13 @@ fn search(cmd: String) -> Redirect {
         "mail" => Redirect::to("https://mail.google.com/"),
         "cal" => Redirect::to("https://calendar.google.com/"),
         "tw" => construct_twitter_url(&cmd),
-        _ => Redirect::to("https://google.com/")
+        "gh" => construct_github_url(&cmd),
+        _ => {
+            // If no match, we search on Google
+            let google_search = construct_google_search_url(&cmd);
+
+            Redirect::to(google_search)
+        }
     }
 }
 
@@ -35,15 +41,7 @@ fn main() {
     rocket::ignite().mount("/", routes![index, search]).launch();
 }
 
-// Write a function to construct twitter url 
-// then maybe a function to construct twitter profile url
-// and another to construct twitter search 
-
 fn construct_twitter_url(query: &str) -> Redirect {
-    // check the query
-    // if it's only the cmd "tw"
-    // do some string matching
-    // matches "tw "
     if query == "tw" {
         Redirect::to("https://twitter.com")
         
@@ -60,16 +58,21 @@ fn construct_twitter_url(query: &str) -> Redirect {
 
         Redirect::to(twitter_search_url)
     }
-    // matches "tw @"
-    // matches tw fsafdas"
-    // default "twitter.com"
-    // send them to Twitter.com
-    // if it contains the @symbol 
-    // send them to that twitter profile
-    // if it contains text but no @ symbol
-    // send them to the twitter search page result
 }
 
+fn construct_github_url(query: &str) -> Redirect {
+    if query == "gh" {
+        Redirect::to("https://github.com")
+        
+    } else {
+        // Assume the other match is "gh page"
+        // optimistic, eh? 
+        let encoded_query = utf8_percent_encode(&query[3..], FRAGMENT).to_string();
+        let github_url = format!("https://github.com/{}", encoded_query);
+
+        Redirect::to(github_url)
+    }
+}
 fn get_command_from_query_string(query_string: &str) -> &str {
     // If it has a space, we know that it is more than the command
     if query_string.contains(" ") {
@@ -91,6 +94,11 @@ fn construct_twitter_profile_url(profile: &str) -> String {
 fn construct_twitter_search_url(query: &str) -> String {
     let encoded_query = utf8_percent_encode(query, FRAGMENT).to_string();
     format!("https://twitter.com/search?q={}", encoded_query)
+}
+
+fn construct_google_search_url(query: &str) -> String {
+    let encoded_query = utf8_percent_encode(query, FRAGMENT).to_string();
+    format!("https://google.com/search?q={}", encoded_query)
 }
 
 
