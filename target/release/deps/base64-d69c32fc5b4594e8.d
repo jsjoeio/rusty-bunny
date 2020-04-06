@@ -1,0 +1,13 @@
+/Users/joe/Dev/rusty-bunny/target/release/deps/base64-d69c32fc5b4594e8.rmeta: /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/lib.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/chunked_encoder.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/display.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/line_wrap.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/tables.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/encode.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/decode.rs
+
+/Users/joe/Dev/rusty-bunny/target/release/deps/libbase64-d69c32fc5b4594e8.rlib: /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/lib.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/chunked_encoder.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/display.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/line_wrap.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/tables.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/encode.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/decode.rs
+
+/Users/joe/Dev/rusty-bunny/target/release/deps/base64-d69c32fc5b4594e8.d: /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/lib.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/chunked_encoder.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/display.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/line_wrap.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/tables.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/encode.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/decode.rs
+
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/lib.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/chunked_encoder.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/display.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/line_wrap.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/tables.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/encode.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.9.3/src/decode.rs:

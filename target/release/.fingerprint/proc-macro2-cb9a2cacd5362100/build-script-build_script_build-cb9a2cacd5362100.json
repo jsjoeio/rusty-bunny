@@ -1,0 +1,1 @@
+{"rustc":6944628228814404284,"features":"[\"default\", \"nightly\", \"proc-macro\"]","target":10088282520713642473,"profile":2574335274271406459,"path":15997765524740318755,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/proc-macro2-cb9a2cacd5362100/dep-build-script-build_script_build-cb9a2cacd5362100"}}],"rustflags":[],"metadata":221150331100616940}
