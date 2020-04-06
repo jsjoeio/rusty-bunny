@@ -6,10 +6,15 @@ extern crate percent_encoding; // 2.1.0
 
 use percent_encoding::{utf8_percent_encode, AsciiSet, CONTROLS};
 use rocket::response::Redirect;
-// use rocket::http::RawStr;
+use rocket::response::NamedFile;
 
 // Used as part of the percent_encoding library
 const FRAGMENT: &AsciiSet = &CONTROLS.add(b' ').add(b'"').add(b'<').add(b'>').add(b'`');
+
+#[get("/favicon.ico")]
+fn favicon() -> Option<NamedFile> {
+    NamedFile::open("./static/favicon.co").ok()
+}
 
 #[get("/")]
 fn index() -> &'static str {
@@ -19,7 +24,7 @@ fn index() -> &'static str {
 #[get("/search?<cmd>")]
 fn search(cmd: String) -> Redirect {
     println!("The cmd is: {}", cmd);
-    // We need a way to match only on the cmd, without losing the rest of the query 
+    // We need a way to match only on the cmd, without losing the rest of the query
     // "tw something"
     let command = get_command_from_query_string(&cmd);
 
@@ -38,13 +43,13 @@ fn search(cmd: String) -> Redirect {
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index, search]).launch();
+    rocket::ignite().mount("/", routes![index, search, favicon]).launch();
 }
 
 fn construct_twitter_url(query: &str) -> Redirect {
     if query == "tw" {
         Redirect::to("https://twitter.com")
-        
+
     // Check if it looks like a Twitter profile
     } else if &query[..4] == "tw @" {
         let profile_url = construct_twitter_profile_url(&query[4..]);
@@ -63,10 +68,10 @@ fn construct_twitter_url(query: &str) -> Redirect {
 fn construct_github_url(query: &str) -> Redirect {
     if query == "gh" {
         Redirect::to("https://github.com")
-        
+
     } else {
         // Assume the other match is "gh page"
-        // optimistic, eh? 
+        // optimistic, eh?
         let encoded_query = utf8_percent_encode(&query[3..], FRAGMENT).to_string();
         let github_url = format!("https://github.com/{}", encoded_query);
 
@@ -90,7 +95,7 @@ fn construct_twitter_profile_url(profile: &str) -> String {
     format!("https://twitter.com/{}", profile)
 }
 
-//TODO write test for this 
+//TODO write test for this
 fn construct_twitter_search_url(query: &str) -> String {
     let encoded_query = utf8_percent_encode(query, FRAGMENT).to_string();
     format!("https://twitter.com/search?q={}", encoded_query)
