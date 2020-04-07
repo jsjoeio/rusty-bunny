@@ -24,7 +24,9 @@
   <h3 align="center">rusty-bunny</h3>
 
   <p align="center">
-    rusty-bunny is a mini-clone of bunny1 - "a tool that lets you write smart bookmarks in [rust] and then share them across all your browsers..."
+    rusty-bunny is a mini-clone of <a href="http://www.bunny1.org/">bunny1  </a>
+    <br />
+    "a tool that lets you write smart bookmarks in [rust] and then share them across all your browsers..."
     <br />
     <a href="https://github.com/github_username/rusty-bunny"><strong>Explore the docs »</strong></a>
     <br />
