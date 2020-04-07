@@ -111,10 +111,12 @@ cargo build
 cargo run
 ```
 5. Visit [localhost:8000](http://localhost:8000/)
-6. To test a command, go to [localhost:8000/search?cmd=tw](http://localhost:8000/search?cmd=tw) and you should be redirecte to Twitter
+6. To test a command, go to [localhost:8000/search?cmd=tw](http://localhost:8000/search?cmd=tw) and you should be redirected to Twitter
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+To test out a command, type in http://localhost:8000/search?cmd= followed by your command.
 
 The following commands are supported by `rusty-bunny`:
 - "tw" -> redirects to twitter.com
