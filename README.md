@@ -13,9 +13,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -150,6 +147,7 @@ Joe Previte - [@jsjoeio](https://twitter.com/jsjoeio)
 
 * [The Rust Community](https://www.rust-lang.org/community)
 * [Rocket.rs](https://rocket.rs/)
+* [@othneildrew](https://github.com/othneildrew) - for the [README template](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
