@@ -31,7 +31,7 @@
     <a href="https://github.com/github_username/rusty-bunny"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/rusty-bunny">View Demo</a>
+    <a href="https://github.com/github_username/rusty-bunny#demo">View Demo</a>
     ·
     <a href="https://github.com/github_username/rusty-bunny/issues">Report Bug</a>
   </p>
