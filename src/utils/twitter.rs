@@ -10,19 +10,15 @@ pub fn construct_twitter_url(query: &str) -> String {
     if query == "tw" {
         let twitter_dotcom = "https://twitter.com";
 
-        return twitter_dotcom.to_string();
+        twitter_dotcom.to_string()
 
     // Check if it looks like a Twitter profile
     } else if &query[..4] == "tw @" {
-        let profile_url = construct_twitter_profile_url(&query[4..]);
-
-        return profile_url;
+        construct_twitter_profile_url(&query[4..])
     } else {
         // Assume the other match is "tw sometext"
         // and search on Twitter
-        let twitter_search_url = construct_twitter_search_url(&query[3..]);
-
-        return twitter_search_url;
+        construct_twitter_search_url(&query[3..])
     }
 }
 

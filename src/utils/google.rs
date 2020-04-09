@@ -9,5 +9,5 @@ pub fn construct_google_search_url(query: &str) -> String {
     let encoded_query = utf8_percent_encode(query, FRAGMENT).to_string();
     let google_search_url = format!("https://google.com/search?q={}", encoded_query);
 
-    return google_search_url;
+    google_search_url
 }

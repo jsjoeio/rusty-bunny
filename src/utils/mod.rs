@@ -4,15 +4,15 @@ pub mod twitter;
 
 pub fn get_command_from_query_string(query_string: &str) -> &str {
     // If it has a space, we know that it is more than the command
-    if query_string.contains(" ") {
+    if query_string.contains(' ') {
         // We need to this to know where to slice the string
         // TODO add note about why we need the unrap_or (tbh i'm not sure why...)
         // copied from StackOverflow (don't have source)
-        let index_of_space = query_string.find(" ").unwrap_or(0);
+        let index_of_space = query_string.find(' ').unwrap_or(0);
         return &query_string[..index_of_space];
     }
 
-    return query_string;
+    query_string
 }
 
 #[cfg(test)]
