@@ -17,7 +17,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/rusty-bunny">
+  <a href="https://github.com/jsjoeio/rusty-bunny">
     <img src="logo.png" alt="Logo" width="64" height="64">
   </a>
 
@@ -28,12 +28,12 @@
     <br />
     "a tool that lets you write smart bookmarks in [rust] and then share them across all your browsers..."
     <br />
-    <a href="https://github.com/github_username/rusty-bunny"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jsjoeio/rusty-bunny"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/rusty-bunny#demo">View Demo</a>
+    <a href="https://github.com/jsjoeio/rusty-bunny#demo">View Demo</a>
     ·
-    <a href="https://github.com/github_username/rusty-bunny/issues">Report Bug</a>
+    <a href="https://github.com/jsjoeio/rusty-bunny/issues">Report Bug</a>
   </p>
 </p>
 
@@ -96,7 +96,7 @@ rustup override set nightly
  
 1. Clone the rusty-bunny
 ```sh
-git clone https://github.com/github_username/rusty-bunny.git
+git clone https://github.com/jsjoeio/rusty-bunny.git
 ```
 2. Make sure you're using nightly 
 ```sh
