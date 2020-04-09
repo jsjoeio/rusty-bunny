@@ -1,4 +1,4 @@
-extern crate percent_encoding; 
+extern crate percent_encoding;
 
 use percent_encoding::{utf8_percent_encode, AsciiSet, CONTROLS};
 
@@ -8,7 +8,7 @@ const FRAGMENT: &AsciiSet = &CONTROLS.add(b' ').add(b'"').add(b'<').add(b'>').ad
 pub fn construct_github_url(query: &str) -> String {
     if query == "gh" {
         let github_dotcom = "https://github.com";
-        
+
         github_dotcom.to_string()
     } else {
         // Assume the other match is "gh page"
@@ -22,17 +22,20 @@ pub fn construct_github_url(query: &str) -> String {
 
 #[cfg(test)]
 mod tests {
-  use super::*;
+    use super::*;
 
-  #[test]
-  fn test_construct_github_profile_url_with_gh() {
-      let fake_query = "gh";
-      assert_eq!(construct_github_url(fake_query), "https://github.com");
-  }
+    #[test]
+    fn test_construct_github_profile_url_with_gh() {
+        let fake_query = "gh";
+        assert_eq!(construct_github_url(fake_query), "https://github.com");
+    }
 
-  #[test]
-  fn test_construct_github_profile_url_with_repo_url() {
-      let fake_query = "gh jsjoeio/rusty-bunny";
-      assert_eq!(construct_github_url(fake_query), "https://github.com/jsjoeio/rusty-bunny");
-  }
+    #[test]
+    fn test_construct_github_profile_url_with_repo_url() {
+        let fake_query = "gh jsjoeio/rusty-bunny";
+        assert_eq!(
+            construct_github_url(fake_query),
+            "https://github.com/jsjoeio/rusty-bunny"
+        );
+    }
 }

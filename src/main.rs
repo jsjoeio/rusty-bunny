@@ -1,9 +1,10 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-#[macro_use] extern crate rocket;
+#[macro_use]
+extern crate rocket;
 
-use rocket::response::Redirect;
 use rocket::response::NamedFile;
+use rocket::response::Redirect;
 
 mod utils;
 
@@ -28,7 +29,7 @@ fn search(cmd: String) -> Redirect {
         "cal" => String::from("https://calendar.google.com/"),
         "tw" => utils::twitter::construct_twitter_url(&cmd),
         "gh" => utils::github::construct_github_url(&cmd),
-            // If no match, we search on Google
+        // If no match, we search on Google
         _ => utils::google::construct_google_search_url(&cmd),
     };
 
@@ -36,5 +37,7 @@ fn search(cmd: String) -> Redirect {
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index, search, favicon]).launch();
+    rocket::ignite()
+        .mount("/", routes![index, search, favicon])
+        .launch();
 }

@@ -1,7 +1,6 @@
-extern crate percent_encoding; 
+extern crate percent_encoding;
 
 use percent_encoding::{utf8_percent_encode, AsciiSet, CONTROLS};
-
 
 // Used as part of the percent_encoding library
 const FRAGMENT: &AsciiSet = &CONTROLS.add(b' ').add(b'"').add(b'<').add(b'>').add(b'`');
@@ -33,11 +32,14 @@ pub fn construct_twitter_search_url(query: &str) -> String {
 
 #[cfg(test)]
 mod tests {
-  use super::*;
+    use super::*;
 
-  #[test]
-  fn test_construct_twitter_profile_url() {
-      let fake_profile = "jsjoeio";
-      assert_eq!(construct_twitter_profile_url(fake_profile), "https://twitter.com/jsjoeio");
-  }
+    #[test]
+    fn test_construct_twitter_profile_url() {
+        let fake_profile = "jsjoeio";
+        assert_eq!(
+            construct_twitter_profile_url(fake_profile),
+            "https://twitter.com/jsjoeio"
+        );
+    }
 }
