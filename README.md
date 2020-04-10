@@ -165,5 +165,5 @@ Joe Previte - [@jsjoeio](https://twitter.com/jsjoeio)
 [issues-shield]: https://img.shields.io/github/issues/jsjoeio/rusty-bunny.svg?style=flat-square
 [issues-url]: https://github.com/jsjoeio/rusty-bunny/issues
 [license-shield]: https://img.shields.io/github/license/jsjoeio/rusty-bunny.svg?style=flat-square
-[license-url]: https://github.com/jsjoeio/rusty-bunny/blob/master/LICENSE.txt
+[license-url]: https://github.com/jsjoeio/rusty-bunny/blob/master/LICENSE
 [product-screenshot]: demo.gif
