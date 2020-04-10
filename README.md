@@ -12,7 +12,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -164,6 +164,6 @@ Joe Previte - [@jsjoeio](https://twitter.com/jsjoeio)
 [stars-url]: https://github.com/jsjoeio/rusty-bunny/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jsjoeio/rusty-bunny.svg?style=flat-square
 [issues-url]: https://github.com/jsjoeio/rusty-bunny/issues
-[license-shield]: https://img.shields.io/github/license/jsjoeio/rusty-bunny.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/jsjoeio/rusty-bunny?style=flat-square
 [license-url]: https://github.com/jsjoeio/rusty-bunny/blob/master/LICENSE
 [product-screenshot]: demo.gif
