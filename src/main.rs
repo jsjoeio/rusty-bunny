@@ -26,6 +26,7 @@ fn search(cmd: String) -> Redirect {
 
     let redirect_url = match command {
         "mail" => String::from("https://mail.google.com/"),
+        "hab" => String::from("https://habitica.com/"),
         "cal" => String::from("https://calendar.google.com/"),
         "tw" => utils::twitter::construct_twitter_url(&cmd),
         "gh" => utils::github::construct_github_url(&cmd),
