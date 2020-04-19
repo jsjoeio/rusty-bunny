@@ -25,11 +25,12 @@ fn search(cmd: String) -> Redirect {
     let command = utils::get_command_from_query_string(&cmd);
 
     let redirect_url = match command {
-        "mail" => String::from("https://mail.google.com/"),
-        "hab" => String::from("https://habitica.com/"),
         "cal" => String::from("https://calendar.google.com/"),
-        "tw" => utils::twitter::construct_twitter_url(&cmd),
         "gh" => utils::github::construct_github_url(&cmd),
+        "hab" => String::from("https://habitica.com/"),
+        "mail" => String::from("https://mail.google.com/"),
+        "texts" => String::from("https://messages.android.com"),
+        "tw" => utils::twitter::construct_twitter_url(&cmd),
         // If no match, we search on Google
         _ => utils::google::construct_google_search_url(&cmd),
     };
