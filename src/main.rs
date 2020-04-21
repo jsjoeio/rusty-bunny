@@ -28,6 +28,8 @@ fn search(cmd: String) -> Redirect {
         "cal" => String::from("https://calendar.google.com/"),
         "gh" => utils::github::construct_github_url(&cmd),
         "hab" => String::from("https://habitica.com/"),
+        "l3" => String::from("http://localhost:3000/"),
+        "l8" => String::from("http://localhost:8000/"),
         "mail" => String::from("https://mail.google.com/"),
         "texts" => String::from("https://messages.android.com"),
         "tw" => utils::twitter::construct_twitter_url(&cmd),
