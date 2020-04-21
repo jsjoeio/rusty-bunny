@@ -19,6 +19,9 @@ mod tests {
     #[test]
     fn test_construct_google_search_url() {
         let fake_query = "hello";
-        assert_eq!(construct_google_search_url(fake_query), "https://google.com/search?q=hello");
+        assert_eq!(
+            construct_google_search_url(fake_query),
+            "https://google.com/search?q=hello"
+        );
     }
 }

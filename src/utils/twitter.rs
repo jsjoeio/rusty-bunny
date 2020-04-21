@@ -37,10 +37,7 @@ mod tests {
     #[test]
     fn test_construct_twitter_url() {
         let fake_query = "tw";
-        assert_eq!(
-            construct_twitter_url(fake_query),
-            "https://twitter.com"
-        );
+        assert_eq!(construct_twitter_url(fake_query), "https://twitter.com");
     }
 
     #[test]
