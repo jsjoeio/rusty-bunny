@@ -24,8 +24,10 @@ fn search(cmd: String) -> Redirect {
     // "tw something"
     let command = utils::get_command_from_query_string(&cmd);
 
+    // Keep in alphabetic order
     let redirect_url = match command {
         "cal" => String::from("https://calendar.google.com/"),
+        "drive" => String::from("https://drive.google.com/"),
         "gh" => utils::github::construct_github_url(&cmd),
         "hab" => String::from("https://habitica.com/"),
         "l3" => String::from("http://localhost:3000/"),
