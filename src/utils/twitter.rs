@@ -41,6 +41,18 @@ mod tests {
     }
 
     #[test]
+    fn test_construct_twitter_url_query() {
+        let fake_query = "tw hello world";
+        assert_eq!(construct_twitter_url(fake_query), "https://twitter.com/search?q=hello%20world");
+    }
+
+    #[test]
+    fn test_construct_twitter_url_profile() {
+        let fake_query = "tw @fbOpenSource";
+        assert_eq!(construct_twitter_url(fake_query), "https://twitter.com/fbOpenSource");
+    }
+
+    #[test]
     fn test_construct_twitter_profile_url() {
         let fake_profile = "jsjoeio";
         assert_eq!(

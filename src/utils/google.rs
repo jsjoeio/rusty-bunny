@@ -24,4 +24,13 @@ mod tests {
             "https://google.com/search?q=hello"
         );
     }
+
+    #[test]
+    fn test_construct_google_search_url_with_encoding() {
+        let fake_query = "hello world";
+        assert_eq!(
+            construct_google_search_url(fake_query),
+            "https://google.com/search?q=hello%20world"
+        );
+    }
 }
