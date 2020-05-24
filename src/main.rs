@@ -32,6 +32,7 @@ fn search(cmd: String) -> Redirect {
         "gh" => utils::github::construct_github_url(&cmd),
         "hab" => String::from("https://habitica.com/"),
         "jp" => String::from("https://joeprevite.com"),
+        "ip" => String::from("https://instapaper.com"),
         "l3" => String::from("http://localhost:3000/"),
         "l8" => String::from("http://localhost:8000/"),
         "mail" => String::from("https://mail.google.com/"),
