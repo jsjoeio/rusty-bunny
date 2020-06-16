@@ -30,7 +30,7 @@ fn search(cmd: String) -> Redirect {
         "drive" => String::from("https://drive.google.com/"),
         "dp" | "disney" | "disneyplus" => String::from("https://disneyplus.com"),
         "gh" => utils::github::construct_github_url(&cmd),
-        "hab" => String::from("https://habitica.com/"),
+        "hey" => String::from("https://app.hey.com/"),
         "jp" => String::from("https://joeprevite.com"),
         "ip" => String::from("https://instapaper.com"),
         "l3" => String::from("http://localhost:3000/"),
