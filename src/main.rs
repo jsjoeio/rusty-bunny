@@ -33,11 +33,11 @@ fn search(cmd: String) -> Redirect {
         "hey" => String::from("https://app.hey.com/"),
         "jp" => String::from("https://joeprevite.com"),
         "ip" => String::from("https://instapaper.com"),
+        "ih" => String::from("https://indiehackers.com"),
         "l3" => String::from("http://localhost:3000/"),
         "l8" => String::from("http://localhost:8000/"),
         "mail" => String::from("https://mail.google.com/"),
         "og" => String::from("https://onegraph.com/"),
-        "texts" => String::from("https://messages.android.com"),
         "tw" => utils::twitter::construct_twitter_url(&cmd),
         // If no match, we search on Google
         _ => utils::google::construct_google_search_url(&cmd),
