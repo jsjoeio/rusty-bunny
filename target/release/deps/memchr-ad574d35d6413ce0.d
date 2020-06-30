@@ -1,0 +1,13 @@
+/Users/joe/Dev/rusty-bunny/target/release/deps/memchr-ad574d35d6413ce0.rmeta: /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/lib.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/fallback.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/iter.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/naive.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/mod.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/avx.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/sse2.rs
+
+/Users/joe/Dev/rusty-bunny/target/release/deps/libmemchr-ad574d35d6413ce0.rlib: /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/lib.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/fallback.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/iter.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/naive.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/mod.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/avx.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/sse2.rs
+
+/Users/joe/Dev/rusty-bunny/target/release/deps/memchr-ad574d35d6413ce0.d: /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/lib.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/fallback.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/iter.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/naive.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/mod.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/avx.rs /Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/sse2.rs
+
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/lib.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/fallback.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/iter.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/naive.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/mod.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/avx.rs:
+/Users/joe/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.3.3/src/x86/sse2.rs:

@@ -1,1 +1,1 @@
-/Users/joe/Dev/rusty-bunny/target/release/rusty-bunny: /Users/joe/Dev/rusty-bunny/src/main.rs
+/Users/joe/Dev/rusty-bunny/target/release/rusty-bunny: /Users/joe/Dev/rusty-bunny/src/main.rs /Users/joe/Dev/rusty-bunny/src/utils/github.rs /Users/joe/Dev/rusty-bunny/src/utils/google.rs /Users/joe/Dev/rusty-bunny/src/utils/mod.rs /Users/joe/Dev/rusty-bunny/src/utils/twitter.rs

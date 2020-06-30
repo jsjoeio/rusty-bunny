@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/joe/Dev/rusty-bunny/target/release/build/typenum-561c6aaf34b322e0/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/joe/Dev/rusty-bunny/target/release/build/typenum-561c6aaf34b322e0/out/op.rs
