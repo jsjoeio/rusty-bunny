@@ -27,8 +27,11 @@ fn search(cmd: String) -> Redirect {
     // Keep in alphabetic order
     let redirect_url = match command {
         "cal" => String::from("https://calendar.google.com/"),
+        "clojurefam" | "cljfam" => String::from("https://github.com/athensresearch/clojurefam"),
         "drive" => String::from("https://drive.google.com/"),
         "dp" | "disney" | "disneyplus" => String::from("https://disneyplus.com"),
+        "foam" => String::from("https://foambubble.github.io/foam"),
+        "gh foam" => String::from("https://github.com/foambubble/foam"),
         "gh" => utils::github::construct_github_url(&cmd),
         "hey" => String::from("https://app.hey.com/"),
         "jp" => String::from("https://joeprevite.com"),
