@@ -27,7 +27,7 @@ fn search(cmd: String) -> Redirect {
     // Keep in alphabetic order
     let redirect_url = match command {
         "cal" => String::from("https://calendar.google.com/"),
-        "ck" => String::from("https://app.convertkit.com/#"),
+        "ck" => String::from("https://app.convertkit.com/"),
         "clojurefam" | "cljfam" => String::from("https://github.com/athensresearch/clojurefam"),
         "drive" => String::from("https://drive.google.com/"),
         "dp" | "disney" | "disneyplus" => String::from("https://disneyplus.com"),
