@@ -41,6 +41,8 @@ fn search(cmd: String) -> Redirect {
         "l3" => String::from("http://localhost:3000/"),
         "l8" => String::from("http://localhost:8000/"),
         "mail" => String::from("https://mail.google.com/"),
+        "map" | "maps" => String::from("https://maps.google.com/"),
+        "photo" | "photos" => String::from("https://photos.google.com/"),
         "og" => String::from("https://onegraph.com/"),
         "tw" => utils::twitter::construct_twitter_url(&cmd),
         // If no match, we search on Google
