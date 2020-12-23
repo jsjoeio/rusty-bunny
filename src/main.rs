@@ -33,6 +33,7 @@ fn search(cmd: String) -> Redirect {
         "dp" | "disney" | "disneyplus" => String::from("https://disneyplus.com"),
         "figma" => String::from("https://figma.com"),
         "foam" => String::from("https://foambubble.github.io/foam"),
+        "g" => utils::google::construct_google_search_url(&cmd),
         "gh foam" => String::from("https://github.com/foambubble/foam"),
         "gh" => utils::github::construct_github_url(&cmd),
         "hey" => String::from("https://app.hey.com/"),
